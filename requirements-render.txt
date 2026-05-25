@@ -1,9 +1,9 @@
 # LexAI — Render deployment requirements (slimmed for 512 MB free tier)
 
 # ── LLM & RAG ───────────────────────────────────────────────
+# sentence-transformers pulls torch (500 MB+) — too heavy for free tier.
+# Using TF-IDF + LSA (sklearn) for semantic search instead.
 groq>=0.13.0
-faiss-cpu==1.14.2
-sentence-transformers>=2.7.0
 
 # ── Document processing ──────────────────────────────────────
 pymupdf>=1.24.0
