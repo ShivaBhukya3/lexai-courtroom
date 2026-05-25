@@ -45,6 +45,8 @@ async def create_case(request: CaseCreateRequest, db: Session = Depends(get_db))
         case_id=case.id,
         case_name=case.case_name,
         case_type=case.case_type,
+        sub_type=case.sub_type or "",
+        court=case.court or "",
         status=case.status,
         created_at=case.created_at.isoformat(),
     )
@@ -100,6 +102,8 @@ async def list_cases(skip: int = 0, limit: int = 20, db: Session = Depends(get_d
                 case_id=c.id,
                 case_name=c.case_name,
                 case_type=c.case_type,
+                sub_type=c.sub_type or "",
+                court=c.court or "",
                 status=c.status,
                 created_at=c.created_at.isoformat(),
             )

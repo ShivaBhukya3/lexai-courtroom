@@ -6,7 +6,8 @@ services:
     buildCommand: |
       pip install --upgrade pip &&
       pip install -r requirements-render.txt &&
-      python scripts/build_legal_database.py
+      python scripts/build_legal_database.py &&
+      python scripts/seed_database.py
     startCommand: uvicorn api.main:app --host 0.0.0.0 --port $PORT
     envVars:
       - key: GROQ_API_KEY

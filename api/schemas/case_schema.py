@@ -22,6 +22,8 @@ class CaseResponse(BaseModel):
     case_id: str
     case_name: str
     case_type: str
+    sub_type: str = ""
+    court: str = ""
     status: str
     created_at: str
 
