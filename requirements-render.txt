@@ -2,7 +2,7 @@
 
 # ── LLM & RAG ───────────────────────────────────────────────
 groq==0.9.0
-faiss-cpu==1.8.0
+faiss-cpu==1.14.2
 sentence-transformers==2.7.0
 
 # ── Document processing ──────────────────────────────────────
