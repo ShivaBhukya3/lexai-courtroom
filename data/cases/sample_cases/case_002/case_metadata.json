@@ -1,0 +1,87 @@
+{
+  "case_id": "CASE-2024-CRM-002",
+  "case_type": "Criminal",
+  "sub_type": "Cheating and Fraud",
+  "fir_number": "FIR No. 234/2024",
+  "police_station": "Andheri (West) Police Station, Mumbai",
+  "court": "Metropolitan Magistrate Court, Mumbai",
+  "judge": "Hon. Magistrate Rajesh Kumar",
+  "complainant": {
+    "name": "Vikram Mehta",
+    "age": 41,
+    "occupation": "Software Engineer",
+    "address": "Flat 402, Sai Residency, Andheri West, Mumbai - 400058"
+  },
+  "accused": {
+    "name": "Pradeep Kumar Sharma",
+    "age": 38,
+    "occupation": "Self-proclaimed Financial Advisor",
+    "address": "Room 12, Janta Colony, Dharavi, Mumbai - 400017",
+    "prior_record": true,
+    "bail_status": "In custody"
+  },
+  "charges": [
+    "IPC Section 420 — Cheating and dishonestly inducing delivery of property",
+    "IPC Section 468 — Forgery for purpose of cheating",
+    "IPC Section 471 — Using as genuine a forged document",
+    "IPC Section 120B — Criminal conspiracy"
+  ],
+  "amount_defrauded_inr": 2500000,
+  "modus_operandi": "Fake investment scheme promising 40% annual returns",
+  "filing_date": "2024-01-08",
+  "arrest_date": "2024-01-10",
+  "chargesheet_date": "2024-02-28",
+  "hearing_dates": [
+    "2024-03-15",
+    "2024-04-20",
+    "2024-05-10"
+  ],
+  "next_hearing": "2024-06-25",
+  "status": "Trial Stage",
+  "witnesses": [
+    {
+      "name": "Vikram Mehta",
+      "type": "complainant"
+    },
+    {
+      "name": "Sunita Shah",
+      "type": "co-victim",
+      "defrauded_amount": 500000
+    },
+    {
+      "name": "Bank Manager, HDFC Andheri",
+      "type": "expert_witness"
+    },
+    {
+      "name": "Investigating Officer Patil",
+      "type": "investigating_officer"
+    }
+  ],
+  "evidence": [
+    {
+      "type": "bank_statements",
+      "description": "HDFC and ICICI bank records"
+    },
+    {
+      "type": "whatsapp_messages",
+      "description": "Investment promises on WhatsApp"
+    },
+    {
+      "type": "fake_certificates",
+      "description": "Forged SEBI registration certificate"
+    },
+    {
+      "type": "victim_statement",
+      "description": "Written complaint by Vikram Mehta"
+    }
+  ],
+  "key_facts": [
+    "Accused posed as SEBI-registered financial advisor with forged credentials",
+    "Victims transferred ₹25 lakhs over 6 months for fake investment scheme",
+    "Accused promised 40% annual returns — far above market rates",
+    "Money transferred to multiple accounts to avoid detection",
+    "SEBI confirmed no registration of accused or his firm"
+  ],
+  "created_at": "2026-05-25T18:47:43.247211",
+  "lexai_version": "1.0.0"
+}

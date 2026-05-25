@@ -1,0 +1,68 @@
+app:
+  name: "LexAI"
+  version: "1.0.0"
+  tagline: "Multimodal Courtroom Intelligence Platform"
+  jurisdiction: "India"
+
+llm:
+  primary: "groq"
+  model: "llama3-70b-8192"
+  vision_model: "gpt-4o"
+  temperature: 0.1
+  max_tokens: 4096
+  streaming: true
+
+whisper:
+  model: "base"
+  language: "en"
+  task: "transcribe"
+
+embeddings:
+  model: "sentence-transformers/all-MiniLM-L6-v2"
+  dimension: 384
+  index_path: "data/processed/embeddings/faiss_legal_index"
+
+rag:
+  top_k: 8
+  search_type: "mmr"
+  score_threshold: 0.3
+  chunk_size: 800
+  chunk_overlap: 150
+
+verdict:
+  features:
+    - evidence_strength_score
+    - witness_credibility_score
+    - precedent_match_score
+    - legal_argument_score
+    - charge_severity_score
+  model: "random_forest"
+  threshold: 0.5
+
+case:
+  supported_doc_types:
+    - pdf
+    - docx
+    - txt
+    - jpg
+    - jpeg
+    - png
+    - mp3
+    - mp4
+    - wav
+    - m4a
+  max_file_size_mb: 100
+
+database:
+  url: "postgresql://admin:secret@localhost:5432/lexai"
+
+api:
+  host: "0.0.0.0"
+  port: 8000
+  rate_limit: 20
+  max_upload_mb: 100
+  secret_key: "lexai_secret_key"
+
+logging:
+  level: "INFO"
+  format: "{time:YYYY-MM-DD HH:mm:ss} | {level} | {name}:{function}:{line} | {message}"

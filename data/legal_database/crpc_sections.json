@@ -1,0 +1,137 @@
+[
+  {
+    "section": "CrPC 41",
+    "title": "When police may arrest without warrant",
+    "description": "A police officer may without an order from a Magistrate and without a warrant, arrest any person who has been concerned in any cognizable offence, or against whom a reasonable complaint has been made or credible information has been received.",
+    "keywords": [
+      "arrest",
+      "without warrant",
+      "police powers",
+      "cognizable offence"
+    ]
+  },
+  {
+    "section": "CrPC 41A",
+    "title": "Notice of appearance before police officer",
+    "description": "The police officer shall, in all cases where the arrest of a person is not required under the provisions of sub-section (1) of section 41, issue a notice directing the person against whom a reasonable complaint has been made.",
+    "keywords": [
+      "notice",
+      "appearance",
+      "alternatives to arrest",
+      "non-arrest"
+    ]
+  },
+  {
+    "section": "CrPC 154",
+    "title": "Information in cognizable cases",
+    "description": "Every information relating to the commission of a cognizable offence, if given orally to an officer in charge of a police station, shall be reduced to writing by him or under his direction, and be read over to the informant.",
+    "keywords": [
+      "FIR",
+      "first information report",
+      "cognizable offence",
+      "police station",
+      "registration"
+    ]
+  },
+  {
+    "section": "CrPC 156",
+    "title": "Police officer's power to investigate cognizable case",
+    "description": "Any officer in charge of a police station may, without the order of a Magistrate, investigate any cognizable case which a Court having jurisdiction over the local area within the limits of such station would have power to inquire into or try.",
+    "keywords": [
+      "investigation",
+      "cognizable case",
+      "police power",
+      "without magistrate order"
+    ]
+  },
+  {
+    "section": "CrPC 161",
+    "title": "Examination of witnesses by police",
+    "description": "Any police officer making an investigation under this Chapter, or any police officer not below such rank as the State Government may, by general or special order, prescribe in this behalf, acting on the requisition of such officer, may examine orally any person.",
+    "keywords": [
+      "witness examination",
+      "police investigation",
+      "statement",
+      "Section 161 statement"
+    ]
+  },
+  {
+    "section": "CrPC 164",
+    "title": "Recording of confessions and statements",
+    "description": "Any Metropolitan Magistrate or Judicial Magistrate may, whether or not he has jurisdiction in the case, record any confession or statement made to him in the course of an investigation under this Chapter or under any other law.",
+    "punishment": "N/A — procedural",
+    "keywords": [
+      "confession",
+      "magistrate confession",
+      "Section 164 statement",
+      "recorded statement"
+    ]
+  },
+  {
+    "section": "CrPC 173",
+    "title": "Report of police officer on completion of investigation",
+    "description": "Every investigation under this Chapter shall be completed without unnecessary delay and, as soon as it is completed, the officer in charge of the police station shall forward to a Magistrate empowered to take cognizance of the offence on a police report, a report in the form prescribed by the State Government.",
+    "keywords": [
+      "chargesheet",
+      "police report",
+      "completion of investigation",
+      "cognizance"
+    ]
+  },
+  {
+    "section": "CrPC 197",
+    "title": "Prosecution of Judges and public servants",
+    "description": "When any person who is or was a Judge or Magistrate or a public servant not removable from his office save by or with the sanction of the Government is accused of any offence alleged to have been committed by him while acting or purporting to act in the discharge of his official duty, no Court shall take cognizance of such offence except with the previous sanction of the Government.",
+    "keywords": [
+      "sanction to prosecute",
+      "public servant",
+      "government official",
+      "prior sanction"
+    ]
+  },
+  {
+    "section": "CrPC 313",
+    "title": "Power to examine the accused",
+    "description": "In every inquiry or trial, for the purpose of enabling the accused personally to explain any circumstances appearing in the evidence against him, the Court shall question him generally on the case.",
+    "keywords": [
+      "accused examination",
+      "313 statement",
+      "right to explain",
+      "trial examination"
+    ]
+  },
+  {
+    "section": "CrPC 437",
+    "title": "When bail may be taken in case of non-bailable offence",
+    "description": "When any person accused of, or suspected of, the commission of any non-bailable offence is arrested or detained without warrant by an officer in charge of a police station or appears or is brought before a Court, he may be released on bail.",
+    "keywords": [
+      "bail",
+      "non-bailable offence",
+      "bail conditions",
+      "bail application"
+    ]
+  },
+  {
+    "section": "CrPC 438",
+    "title": "Direction for grant of bail to person apprehending arrest",
+    "description": "When any person has reason to believe that he may be arrested on an accusation of having committed a non-bailable offence, he may apply to the High Court or the Court of Session for a direction under this section; and that Court may, if it thinks fit, direct that in the event of such arrest, he shall be released on bail.",
+    "keywords": [
+      "anticipatory bail",
+      "pre-arrest bail",
+      "Section 438",
+      "anticipatory bail application"
+    ]
+  },
+  {
+    "section": "CrPC 482",
+    "title": "Saving of inherent powers of High Court",
+    "description": "Nothing in this Code shall be deemed to limit or affect the inherent powers of the High Court to make such orders as may be necessary to give effect to any order under this Code, or to prevent abuse of the process of any Court or otherwise to secure the ends of justice.",
+    "keywords": [
+      "inherent powers",
+      "High Court",
+      "quashing FIR",
+      "482 petition",
+      "abuse of process"
+    ]
+  }
+]

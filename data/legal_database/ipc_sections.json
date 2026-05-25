@@ -1,0 +1,457 @@
+[
+  {
+    "section": "IPC 34",
+    "title": "Acts done by several persons in furtherance of common intention",
+    "description": "When a criminal act is done by several persons in furtherance of the common intention of all, each of such persons is liable for that act in the same manner as if it were done by him alone.",
+    "punishment": "Same as the principal offence",
+    "bailable": null,
+    "cognizable": null,
+    "keywords": [
+      "common intention",
+      "joint liability",
+      "group crime",
+      "abetment"
+    ]
+  },
+  {
+    "section": "IPC 120B",
+    "title": "Punishment of criminal conspiracy",
+    "description": "Whoever is a party to a criminal conspiracy to commit an offence punishable with death, imprisonment for life or rigorous imprisonment for a term of two years or upwards, shall be punished in the same manner as if he had abetted such offence.",
+    "punishment": "Same as abetment of the offence conspired",
+    "bailable": false,
+    "cognizable": true,
+    "keywords": [
+      "conspiracy",
+      "criminal conspiracy",
+      "gang",
+      "organized crime",
+      "planning"
+    ]
+  },
+  {
+    "section": "IPC 149",
+    "title": "Every member of unlawful assembly guilty of offence committed in prosecution of common object",
+    "description": "If an offence is committed by any member of an unlawful assembly in prosecution of the common object of that assembly, every person who at the time of the committing of that offence, is a member of the same assembly, is guilty of that offence.",
+    "punishment": "Same as the principal offence",
+    "bailable": null,
+    "cognizable": null,
+    "keywords": [
+      "unlawful assembly",
+      "mob",
+      "riot",
+      "common object"
+    ]
+  },
+  {
+    "section": "IPC 302",
+    "title": "Punishment for murder",
+    "description": "Whoever commits murder shall be punished with death, or imprisonment for life, and shall also be liable to fine. Murder is defined under Section 300 as culpable homicide amounting to murder when done with intention to cause death or bodily injury sufficient to cause death.",
+    "punishment": "Death or imprisonment for life + fine",
+    "bailable": false,
+    "cognizable": true,
+    "keywords": [
+      "murder",
+      "homicide",
+      "killing",
+      "death",
+      "culpable homicide"
+    ]
+  },
+  {
+    "section": "IPC 304",
+    "title": "Punishment for culpable homicide not amounting to murder",
+    "description": "Whoever commits culpable homicide not amounting to murder shall be punished with imprisonment for life, or imprisonment for either description for a term which may extend to ten years, and shall also be liable to fine.",
+    "punishment": "Life imprisonment or up to 10 years + fine",
+    "bailable": false,
+    "cognizable": true,
+    "keywords": [
+      "culpable homicide",
+      "manslaughter",
+      "accidental death",
+      "negligent killing"
+    ]
+  },
+  {
+    "section": "IPC 304A",
+    "title": "Causing death by negligence",
+    "description": "Whoever causes the death of any person by doing any rash or negligent act not amounting to culpable homicide, shall be punished with imprisonment for a term which may extend to two years, or with fine, or with both.",
+    "punishment": "Up to 2 years imprisonment or fine or both",
+    "bailable": true,
+    "cognizable": true,
+    "keywords": [
+      "negligence",
+      "rash act",
+      "accident",
+      "death by negligence",
+      "medical negligence"
+    ]
+  },
+  {
+    "section": "IPC 307",
+    "title": "Attempt to murder",
+    "description": "Whoever does any act with such intention or knowledge, and under such circumstances that, if he by that act caused death, he would be guilty of murder, shall be punished with imprisonment for a term which may extend to ten years, and shall also be liable to fine.",
+    "punishment": "Up to 10 years + fine; life imprisonment if hurt caused",
+    "bailable": false,
+    "cognizable": true,
+    "keywords": [
+      "attempt to murder",
+      "attempted murder",
+      "try to kill",
+      "assault with intent to kill"
+    ]
+  },
+  {
+    "section": "IPC 323",
+    "title": "Punishment for voluntarily causing hurt",
+    "description": "Whoever, except in the case provided for by section 334, voluntarily causes hurt, shall be punished with imprisonment for a term which may extend to one year, or with fine which may extend to one thousand rupees, or with both.",
+    "punishment": "Up to 1 year or fine up to Rs. 1000 or both",
+    "bailable": true,
+    "cognizable": false,
+    "keywords": [
+      "hurt",
+      "assault",
+      "beating",
+      "injury",
+      "simple hurt"
+    ]
+  },
+  {
+    "section": "IPC 324",
+    "title": "Voluntarily causing hurt by dangerous weapons or means",
+    "description": "Whoever, except in the case provided for by section 334, voluntarily causes hurt by means of any instrument for shooting, stabbing or cutting, or any instrument which, used as weapon of offence, is likely to cause death.",
+    "punishment": "Up to 3 years or fine or both",
+    "bailable": false,
+    "cognizable": true,
+    "keywords": [
+      "hurt by weapon",
+      "stabbing",
+      "cutting",
+      "grievous hurt",
+      "weapon assault"
+    ]
+  },
+  {
+    "section": "IPC 325",
+    "title": "Punishment for voluntarily causing grievous hurt",
+    "description": "Whoever voluntarily causes grievous hurt, shall be punished with imprisonment for a term which may extend to seven years, and shall also be liable to fine.",
+    "punishment": "Up to 7 years + fine",
+    "bailable": false,
+    "cognizable": true,
+    "keywords": [
+      "grievous hurt",
+      "serious injury",
+      "permanent disability",
+      "grievous bodily harm"
+    ]
+  },
+  {
+    "section": "IPC 354",
+    "title": "Assault or criminal force to woman with intent to outrage her modesty",
+    "description": "Whoever assaults or uses criminal force to any woman, intending to outrage or knowing it to be likely that he will thereby outrage her modesty, shall be punished with imprisonment for a term which shall not be less than one year but which may extend to five years, and shall also be liable to fine.",
+    "punishment": "1 to 5 years + fine",
+    "bailable": false,
+    "cognizable": true,
+    "keywords": [
+      "modesty",
+      "outrage modesty",
+      "sexual harassment",
+      "molestation",
+      "woman assault"
+    ]
+  },
+  {
+    "section": "IPC 354A",
+    "title": "Sexual harassment and punishment for sexual harassment",
+    "description": "A man committing physical contact and advances involving unwelcome and explicit sexual overtures; or a demand or request for sexual favours; or showing pornography against the will of a woman; or making sexually coloured remarks shall be guilty of sexual harassment.",
+    "punishment": "Up to 3 years or fine or both",
+    "bailable": false,
+    "cognizable": true,
+    "keywords": [
+      "sexual harassment",
+      "workplace harassment",
+      "unwanted advances",
+      "POSH act"
+    ]
+  },
+  {
+    "section": "IPC 376",
+    "title": "Punishment for rape",
+    "description": "Whoever commits rape shall be punished with rigorous imprisonment for a term which shall not be less than ten years but which may extend to imprisonment for life and shall also be liable to fine. In cases of aggravated rape, the punishment shall not be less than twenty years.",
+    "punishment": "Minimum 10 years RI to life imprisonment + fine",
+    "bailable": false,
+    "cognizable": true,
+    "keywords": [
+      "rape",
+      "sexual assault",
+      "POCSO",
+      "gang rape",
+      "aggravated sexual assault"
+    ]
+  },
+  {
+    "section": "IPC 379",
+    "title": "Punishment for theft",
+    "description": "Whoever commits theft shall be punished with imprisonment of either description for a term which may extend to three years, or with fine, or with both.",
+    "punishment": "Up to 3 years or fine or both",
+    "bailable": true,
+    "cognizable": true,
+    "keywords": [
+      "theft",
+      "stealing",
+      "larceny",
+      "pickpocket",
+      "shoplifting"
+    ]
+  },
+  {
+    "section": "IPC 380",
+    "title": "Theft in dwelling house etc.",
+    "description": "Whoever commits theft in any building, tent or vessel, which building, tent or vessel is used as a human dwelling, or used for the custody of property, shall be punished with imprisonment for a term which may extend to seven years, and shall also be liable to fine.",
+    "punishment": "Up to 7 years + fine",
+    "bailable": false,
+    "cognizable": true,
+    "keywords": [
+      "house theft",
+      "burglary",
+      "dwelling theft",
+      "home robbery",
+      "break-in"
+    ]
+  },
+  {
+    "section": "IPC 392",
+    "title": "Punishment for robbery",
+    "description": "Whoever commits robbery shall be punished with rigorous imprisonment for a term which may extend to ten years, and shall also be liable to fine; and, if the robbery be committed on the highway between sunset and sunrise, the imprisonment may be extended to fourteen years.",
+    "punishment": "Up to 10 years RI + fine; 14 years if on highway after sunset",
+    "bailable": false,
+    "cognizable": true,
+    "keywords": [
+      "robbery",
+      "snatching",
+      "mugging",
+      "chain snatching",
+      "violent theft"
+    ]
+  },
+  {
+    "section": "IPC 395",
+    "title": "Punishment for dacoity",
+    "description": "Whoever commits dacoity shall be punished with imprisonment for life, or with rigorous imprisonment for a term which may extend to ten years, and shall also be liable to fine.",
+    "punishment": "Life imprisonment or up to 10 years RI + fine",
+    "bailable": false,
+    "cognizable": true,
+    "keywords": [
+      "dacoity",
+      "gang robbery",
+      "armed robbery",
+      "organized robbery",
+      "five or more persons"
+    ]
+  },
+  {
+    "section": "IPC 406",
+    "title": "Punishment for criminal breach of trust",
+    "description": "Whoever commits criminal breach of trust shall be punished with imprisonment of either description for a term which may extend to three years, or with fine, or with both.",
+    "punishment": "Up to 3 years or fine or both",
+    "bailable": true,
+    "cognizable": true,
+    "keywords": [
+      "breach of trust",
+      "misappropriation",
+      "entrustment",
+      "fiduciary",
+      "embezzlement"
+    ]
+  },
+  {
+    "section": "IPC 420",
+    "title": "Cheating and dishonestly inducing delivery of property",
+    "description": "Whoever cheats and thereby dishonestly induces the person deceived to deliver any property to any person, or to make, alter or destroy the whole or any part of a valuable security, or anything which is signed or sealed, and which is capable of being converted into a valuable security, shall be punished with imprisonment for a term which may extend to seven years, and shall also be liable to fine.",
+    "punishment": "Up to 7 years + fine",
+    "bailable": false,
+    "cognizable": true,
+    "keywords": [
+      "cheating",
+      "fraud",
+      "deception",
+      "dishonest inducement",
+      "property fraud",
+      "scam",
+      "misrepresentation"
+    ]
+  },
+  {
+    "section": "IPC 467",
+    "title": "Forgery of valuable security, will, etc.",
+    "description": "Whoever forges a document which purports to be a valuable security or a will, or an authority to adopt a son, or which purports to give authority to any person to make or transfer any valuable security, or to receive the principal, interest or dividends thereon.",
+    "punishment": "Up to 10 years + fine",
+    "bailable": false,
+    "cognizable": true,
+    "keywords": [
+      "forgery",
+      "fake document",
+      "counterfeit",
+      "forged security",
+      "document fraud"
+    ]
+  },
+  {
+    "section": "IPC 468",
+    "title": "Forgery for purpose of cheating",
+    "description": "Whoever commits forgery, intending that the document forged shall be used for the purpose of cheating, shall be punished with imprisonment for a term which may extend to seven years, and shall also be liable to fine.",
+    "punishment": "Up to 7 years + fine",
+    "bailable": false,
+    "cognizable": true,
+    "keywords": [
+      "forgery",
+      "fake certificate",
+      "forged document",
+      "cheating by forgery"
+    ]
+  },
+  {
+    "section": "IPC 471",
+    "title": "Using as genuine a forged document or electronic record",
+    "description": "Whoever fraudulently or dishonestly uses as genuine any document or electronic record which he knows or has reason to believe to be a forged document or electronic record, shall be punished in the same manner as if he had forged such document or electronic record.",
+    "punishment": "Same as for forgery of the document used",
+    "bailable": false,
+    "cognizable": true,
+    "keywords": [
+      "using forged document",
+      "fake certificate use",
+      "forged instrument",
+      "document misuse"
+    ]
+  },
+  {
+    "section": "IPC 498A",
+    "title": "Husband or relative of husband of a woman subjecting her to cruelty",
+    "description": "Whoever, being the husband or the relative of the husband of a woman, subjects such woman to cruelty shall be punished with imprisonment for a term which may extend to three years and shall also be liable to fine.",
+    "punishment": "Up to 3 years + fine",
+    "bailable": false,
+    "cognizable": true,
+    "keywords": [
+      "domestic violence",
+      "cruelty by husband",
+      "dowry harassment",
+      "matrimonial cruelty",
+      "dowry demand"
+    ]
+  },
+  {
+    "section": "IPC 304B",
+    "title": "Dowry death",
+    "description": "Where the death of a woman is caused by any burns or bodily injury or occurs under suspicious circumstances within seven years of marriage, and it is shown that soon before her death she was subjected to cruelty or harassment by her husband or any relative of her husband for, or in connection with, any demand for dowry.",
+    "punishment": "Minimum 7 years, maximum life imprisonment",
+    "bailable": false,
+    "cognizable": true,
+    "keywords": [
+      "dowry death",
+      "bride burning",
+      "dowry murder",
+      "matrimonial death"
+    ]
+  },
+  {
+    "section": "IPC 504",
+    "title": "Intentional insult with intent to provoke breach of the peace",
+    "description": "Whoever intentionally insults, and thereby gives provocation to any person, intending or knowing it to be likely that such provocation will cause him to break the public peace, or to commit any other offence.",
+    "punishment": "Up to 2 years or fine or both",
+    "bailable": true,
+    "cognizable": false,
+    "keywords": [
+      "insult",
+      "provocation",
+      "abusing",
+      "verbal abuse",
+      "intentional insult"
+    ]
+  },
+  {
+    "section": "IPC 506",
+    "title": "Punishment for criminal intimidation",
+    "description": "Whoever commits the offence of criminal intimidation shall be punished with imprisonment for a term which may extend to two years, or with fine, or with both; and if the threat be to cause death or grievous hurt, or to cause the destruction of any property by fire, shall be punished with imprisonment for a term which may extend to seven years.",
+    "punishment": "Up to 2 years or fine; up to 7 years for serious threats",
+    "bailable": true,
+    "cognizable": false,
+    "keywords": [
+      "threat",
+      "intimidation",
+      "threatening",
+      "criminal threat",
+      "coercion"
+    ]
+  },
+  {
+    "section": "IPC 509",
+    "title": "Word, gesture or act intended to insult the modesty of a woman",
+    "description": "Whoever, intending to insult the modesty of any woman, utters any word, makes any sound or gesture, or exhibits any object, intending that such word or sound shall be heard, or that such gesture or object shall be seen, by such woman.",
+    "punishment": "Up to 3 years + fine",
+    "bailable": true,
+    "cognizable": false,
+    "keywords": [
+      "eve teasing",
+      "sexual comments",
+      "modesty insult",
+      "catcalling",
+      "verbal sexual harassment"
+    ]
+  },
+  {
+    "section": "IPC 147",
+    "title": "Punishment for rioting",
+    "description": "Whoever is guilty of rioting, shall be punished with imprisonment for a term which may extend to two years, or with fine, or with both.",
+    "punishment": "Up to 2 years or fine or both",
+    "bailable": true,
+    "cognizable": true,
+    "keywords": [
+      "riot",
+      "rioting",
+      "public disorder",
+      "mob violence",
+      "unlawful assembly"
+    ]
+  },
+  {
+    "section": "IPC 148",
+    "title": "Rioting, armed with deadly weapon",
+    "description": "Whoever is guilty of rioting, being armed with a deadly weapon or with anything which, used as a weapon of offence, is likely to cause death, shall be punished with imprisonment for a term which may extend to three years, or with fine, or with both.",
+    "punishment": "Up to 3 years or fine or both",
+    "bailable": false,
+    "cognizable": true,
+    "keywords": [
+      "armed rioting",
+      "rioting with weapon",
+      "mob with weapons",
+      "communal violence"
+    ]
+  },
+  {
+    "section": "IPC 201",
+    "title": "Causing disappearance of evidence of offence",
+    "description": "Whoever, knowing or having reason to believe that an offence has been committed, causes any evidence of the commission of that offence to disappear, with the intention of screening the offender from legal punishment.",
+    "punishment": "Imprisonment up to the maximum provided for the screened offence",
+    "bailable": null,
+    "cognizable": null,
+    "keywords": [
+      "evidence destruction",
+      "concealing evidence",
+      "obstruction of justice",
+      "tampering with evidence"
+    ]
+  },
+  {
+    "section": "IPC 182",
+    "title": "False information, with intent to cause public servant to use his lawful power",
+    "description": "Whoever gives to any public servant any information which he knows or believes to be false, intending thereby to cause, or knowing it to be likely that he will thereby cause, such public servant to use the lawful power of such public servant.",
+    "punishment": "Up to 6 months or fine up to Rs. 1000 or both",
+    "bailable": true,
+    "cognizable": false,
+    "keywords": [
+      "false complaint",
+      "false FIR",
+      "false information",
+      "misleading police"
+    ]
+  }
+]

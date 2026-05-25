@@ -1,0 +1,185 @@
+[
+  {
+    "case_name": "Joseph Shine v. Union of India",
+    "citation": "(2019) 3 SCC 39",
+    "court": "Supreme Court of India",
+    "year": 2018,
+    "bench_strength": 5,
+    "coram": [
+      "Dipak Misra CJ",
+      "A.M. Khanwilkar J",
+      "R.F. Nariman J",
+      "D.Y. Chandrachud J",
+      "Indu Malhotra J"
+    ],
+    "area_of_law": "Criminal Law — Adultery",
+    "summary": "Struck down IPC Section 497 (adultery) as unconstitutional. The court held that the provision was archaic, paternalistic, and treated women as property of their husbands. Adultery was decriminalized.",
+    "key_ratio": "Adultery cannot be a criminal offence. Women are not chattel of their husbands. The law violated Articles 14, 15, and 21 of the Constitution.",
+    "impact": "IPC Section 497 was struck down. Adultery may still be a ground for civil matrimonial remedies but is no longer a criminal offence."
+  },
+  {
+    "case_name": "Shafin Jahan v. Asokan K.M.",
+    "citation": "(2018) 16 SCC 368",
+    "court": "Supreme Court of India",
+    "year": 2018,
+    "bench_strength": 3,
+    "coram": [
+      "Dipak Misra CJ",
+      "A.M. Khanwilkar J",
+      "D.Y. Chandrachud J"
+    ],
+    "area_of_law": "Constitutional Law — Marriage and Personal Liberty",
+    "summary": "The Supreme Court restored the marriage of Hadiya (formerly Akhila) with Shafin Jahan, overruling the Kerala HC's annulment. The court held that the right to choose a partner is a fundamental right under Article 21.",
+    "key_ratio": "Right to choose a partner for marriage is a fundamental right. Courts cannot annul marriages of adults based on parental objection or religious conversion allegations.",
+    "impact": "Reinforced right to marry a person of one's choice regardless of religion."
+  },
+  {
+    "case_name": "Common Cause v. Union of India (Passive Euthanasia)",
+    "citation": "(2018) 5 SCC 1",
+    "court": "Supreme Court of India",
+    "year": 2018,
+    "bench_strength": 5,
+    "coram": [
+      "Dipak Misra CJ",
+      "A.K. Sikri J",
+      "A.M. Khanwilkar J",
+      "D.Y. Chandrachud J",
+      "Ashok Bhushan J"
+    ],
+    "area_of_law": "Constitutional Law — Right to Die with Dignity",
+    "summary": "Passive euthanasia recognized as a part of right to live with dignity under Article 21. The court upheld the right of a person to create a living will (advance medical directive) to refuse treatment in case of terminal illness.",
+    "key_ratio": "Right to die with dignity is a fundamental right under Article 21. Passive euthanasia and advance directives are legal. The dignity of death is as important as dignity of life.",
+    "impact": "Advance medical directives (living wills) are legally valid in India."
+  },
+  {
+    "case_name": "Shayara Bano v. Union of India (Triple Talaq)",
+    "citation": "(2017) 9 SCC 1",
+    "court": "Supreme Court of India",
+    "year": 2017,
+    "bench_strength": 5,
+    "coram": [
+      "J.S. Khehar CJ",
+      "Kurian Joseph J",
+      "R.F. Nariman J",
+      "U.U. Lalit J",
+      "S. Abdul Nazeer J"
+    ],
+    "area_of_law": "Personal Law — Muslim Divorce",
+    "summary": "Triple talaq (talaq-e-biddat) was declared unconstitutional by 3:2 majority. The practice of instant triple talaq was held to be manifestly arbitrary and violative of Article 14.",
+    "key_ratio": "Triple talaq is unconstitutional as it is manifestly arbitrary and violates dignity of Muslim women. What is bad in theology cannot be good in law.",
+    "impact": "The Muslim Women (Protection of Rights on Marriage) Act 2019 subsequently criminalized triple talaq."
+  },
+  {
+    "case_name": "Indian Young Lawyers Association v. State of Kerala (Sabarimala)",
+    "citation": "(2019) 11 SCC 1",
+    "court": "Supreme Court of India",
+    "year": 2018,
+    "bench_strength": 5,
+    "coram": [
+      "Dipak Misra CJ",
+      "A.M. Khanwilkar J",
+      "R.F. Nariman J",
+      "D.Y. Chandrachud J",
+      "Indu Malhotra J"
+    ],
+    "area_of_law": "Constitutional Law — Religion and Equality",
+    "summary": "The prohibition on entry of women of menstruating age (10-50 years) to the Sabarimala temple was struck down as unconstitutional. All women have the right to enter temples regardless of age or physiological conditions.",
+    "key_ratio": "Physiological characteristics cannot be grounds for exclusion. Devotion cannot be subjected to biological restrictions. Exclusion of women from temple is unconstitutional.",
+    "impact": "Women of all ages now have legal right to enter Sabarimala temple, though implementation faced significant public resistance."
+  },
+  {
+    "case_name": "Pam Developments Pvt. Ltd. v. State of West Bengal",
+    "citation": "(2019) 8 SCC 112",
+    "court": "Supreme Court of India",
+    "year": 2019,
+    "bench_strength": 2,
+    "coram": [
+      "S.A. Nazeer J",
+      "Sanjiv Khanna J"
+    ],
+    "area_of_law": "Commercial Law — Arbitration",
+    "summary": "The Supreme Court held that the limitation period for challenging arbitral awards under Section 34 of the Arbitration Act cannot be extended by courts under Section 5 of the Limitation Act. The three-month period plus 30 days is an absolute outer limit.",
+    "key_ratio": "Limitation period for challenging arbitral awards is strictly mandatory. Courts cannot extend time beyond the outer limit prescribed under Section 34(3) of the Arbitration Act.",
+    "impact": "Significant impact on commercial arbitration. Parties must file challenges within strict time limits."
+  },
+  {
+    "case_name": "Sonu Gupta v. Dipak Gupta",
+    "citation": "(2021) 4 SCC 540",
+    "court": "Supreme Court of India",
+    "year": 2021,
+    "bench_strength": 3,
+    "coram": [
+      "Sanjay Kishan Kaul J",
+      "Dinesh Maheshwari J",
+      "Hrishikesh Roy J"
+    ],
+    "area_of_law": "Family Law — Divorce",
+    "summary": "The Supreme Court exercised its power under Article 142 to dissolve a marriage on grounds of irretrievable breakdown — even though this ground is not expressly available under the Hindu Marriage Act. The court held that in exceptional cases of long separation, Article 142 can be used.",
+    "key_ratio": "Irretrievable breakdown of marriage can be a ground for divorce under Article 142 of the Constitution. Courts can exercise constitutional power to do complete justice.",
+    "impact": "Courts can grant divorce in exceptional cases using Article 142 even without statutory ground."
+  },
+  {
+    "case_name": "Rupa Ashok Hurra v. Ashok Hurra",
+    "citation": "AIR 2002 SC 1771",
+    "court": "Supreme Court of India",
+    "year": 2002,
+    "bench_strength": 5,
+    "coram": [
+      "G.B. Pattanaik CJ",
+      "S.S.M. Quadri J",
+      "Y.K. Sabharwal J",
+      "Ruma Pal J",
+      "Shivaraj V. Patil J"
+    ],
+    "area_of_law": "Constitutional Law — Curative Petition",
+    "summary": "The Supreme Court recognized the concept of 'Curative Petition' — a petition that can be filed even after a review petition is dismissed. This is the last judicial remedy before the Supreme Court.",
+    "key_ratio": "The Supreme Court can reconsider its own final judgment after review is dismissed, in exceptional circumstances to prevent gross miscarriage of justice.",
+    "impact": "Curative petitions are now a recognized last-resort remedy before the Supreme Court."
+  },
+  {
+    "case_name": "State of UP v. Not Reported — Section 438 CrPC Anticipatory Bail",
+    "citation": "(2019) 7 SCC 1",
+    "court": "Supreme Court of India",
+    "year": 2019,
+    "bench_strength": 3,
+    "coram": [
+      "Arun Mishra J",
+      "Indira Banerjee J",
+      "M.R. Shah J"
+    ],
+    "area_of_law": "Criminal Procedure — Anticipatory Bail",
+    "summary": "The Supreme Court held that anticipatory bail under Section 438 CrPC can be granted without time limitation. Earlier practice of granting anticipatory bail only till filing of chargesheet was deprecated.",
+    "key_ratio": "Anticipatory bail operates till the end of trial unless cancelled by court. Courts should not impose blanket time limits on anticipatory bail.",
+    "impact": "Changed the practice of courts that used to routinely limit anticipatory bail to the period till chargesheet filing."
+  },
+  {
+    "case_name": "Lily Thomas v. Union of India",
+    "citation": "(2013) 7 SCC 653",
+    "court": "Supreme Court of India",
+    "year": 2013,
+    "bench_strength": 2,
+    "coram": [
+      "S.J. Mukhopadhaya J",
+      "Dipak Misra J"
+    ],
+    "area_of_law": "Electoral Law — Disqualification of Legislators",
+    "summary": "Any sitting MP or MLA convicted of any offence and sentenced to minimum 2 years imprisonment is immediately disqualified from holding office. The provision in Section 8(4) of the Representation of People Act allowing convicted legislators to continue in office pending appeal was struck down.",
+    "key_ratio": "Convicted legislators stand immediately disqualified. The law cannot discriminate between a sitting member and a new candidate. There is no stay on disqualification.",
+    "impact": "Major electoral reform. Several sitting MPs and MLAs have been disqualified pursuant to this ruling."
+  },
+  {
+    "case_name": "NALSA v. Union of India (Transgender Rights)",
+    "citation": "(2014) 5 SCC 438",
+    "court": "Supreme Court of India",
+    "year": 2014,
+    "bench_strength": 2,
+    "coram": [
+      "K.S. Radhakrishnan J",
+      "A.K. Sikri J"
+    ],
+    "area_of_law": "Constitutional Law — Transgender Rights",
+    "summary": "Transgender persons were recognized as a 'third gender'. Their right to self-identification of gender was recognized as a fundamental right. Government was directed to grant reservations and other benefits to transgenders as a socially and educationally backward class.",
+    "key_ratio": "Third gender is recognized as a legal category. Self-identified gender must be respected by the State. Transgender persons have fundamental rights to equality and dignity.",
+    "impact": "Paved the way for the Transgender Persons (Protection of Rights) Act 2019."
+  }
+]

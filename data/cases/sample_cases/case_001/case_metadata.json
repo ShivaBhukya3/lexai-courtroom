@@ -1,0 +1,89 @@
+{
+  "case_id": "CASE-2024-CIV-001",
+  "case_type": "Civil",
+  "sub_type": "Property Dispute",
+  "court": "Civil Judge Senior Division, Nashik",
+  "judge": "Hon. Justice Priya Deshmukh",
+  "plaintiff": {
+    "name": "Ramesh Baburao Patil",
+    "age": 52,
+    "occupation": "Farmer",
+    "address": "Gat No. 45, Village Ozar, Nashik District, Maharashtra - 422206",
+    "advocate": "Adv. Suresh Kulkarni"
+  },
+  "defendant": {
+    "name": "Suresh Govind Patil",
+    "age": 48,
+    "occupation": "Businessman",
+    "address": "Plot No. 12, Cidco Colony, Nashik - 422009",
+    "advocate": "Adv. Meena Sharma"
+  },
+  "charges": [
+    "Recovery of possession of agricultural land",
+    "Declaration of title",
+    "Permanent injunction"
+  ],
+  "applicable_law": [
+    "CPC Order VII Rule 1",
+    "Specific Relief Act 1963",
+    "Transfer of Property Act 1882"
+  ],
+  "survey_numbers": [
+    "145/2A",
+    "146/1"
+  ],
+  "land_area": "5 Acres",
+  "land_value_inr": 8500000,
+  "filing_date": "2024-01-15",
+  "hearing_dates": [
+    "2024-02-20",
+    "2024-03-15",
+    "2024-04-10",
+    "2024-05-22"
+  ],
+  "next_hearing": "2024-06-18",
+  "status": "Evidence Recording Stage",
+  "witnesses": [
+    {
+      "name": "Govind Tukaram Patil",
+      "relation": "Plaintiff's brother",
+      "type": "fact_witness"
+    },
+    {
+      "name": "Ramesh Sarpanch Deshpande",
+      "relation": "Village Sarpanch",
+      "type": "character_witness"
+    },
+    {
+      "name": "Land Revenue Inspector",
+      "relation": "Government official",
+      "type": "expert_witness"
+    }
+  ],
+  "documents": [
+    {
+      "name": "7/12 Extract",
+      "type": "revenue_record",
+      "date": "2023-11-20"
+    },
+    {
+      "name": "Sale Deed 2001",
+      "type": "ownership_document",
+      "date": "2001-06-15"
+    },
+    {
+      "name": "Mutation Entry",
+      "type": "revenue_record",
+      "date": "2019-03-10"
+    }
+  ],
+  "key_facts": [
+    "Plaintiff claims ownership since 2001 via registered sale deed",
+    "Defendant occupied land during plaintiff's illness in 2022",
+    "5 acres of prime agricultural land in Maharashtra's wine country",
+    "Land value approximately ₹85 lakhs at current market rates",
+    "Defendant claims adverse possession under Section 27 Limitation Act"
+  ],
+  "created_at": "2026-05-25T18:47:43.223834",
+  "lexai_version": "1.0.0"
+}

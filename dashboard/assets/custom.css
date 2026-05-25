@@ -1,0 +1,337 @@
+/* ============================================================
+   LexAI — Legal Dark Theme
+   Multimodal Courtroom Intelligence Platform
+   ============================================================ */
+
+:root {
+  --bg-primary:    #04080f;
+  --bg-secondary:  #080d1a;
+  --bg-card:       #0c1221;
+  --bg-surface:    #101828;
+  --accent-gold:   #c9a84c;
+  --accent-blue:   #1a56db;
+  --accent-teal:   #0694a2;
+  --accent-red:    #e02424;
+  --accent-green:  #057a55;
+  --text-primary:  #f3f4f6;
+  --text-secondary:#9ca3af;
+  --text-muted:    #4b5563;
+  --border:        rgba(255,255,255,0.06);
+  --border-gold:   rgba(201,168,76,0.2);
+  --gold-gradient: linear-gradient(135deg, #c9a84c 0%, #f0d060 100%);
+  --blue-gradient: linear-gradient(135deg, #1a56db 0%, #0694a2 100%);
+  --card-shadow:   0 4px 24px rgba(0,0,0,0.6);
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+html, body,
+[data-testid="stAppViewContainer"] {
+  background: var(--bg-primary) !important;
+  color: var(--text-primary) !important;
+  font-family: 'Inter', 'Georgia', serif !important;
+}
+
+#MainMenu, footer, header,
+[data-testid="stToolbar"],
+[data-testid="stDecoration"] {
+  display: none !important;
+}
+
+/* ── SIDEBAR ─────────────────────────────────────────────── */
+[data-testid="stSidebar"] {
+  background: var(--bg-secondary) !important;
+  border-right: 1px solid var(--border-gold) !important;
+}
+[data-testid="stSidebar"] * {
+  color: var(--text-primary) !important;
+}
+[data-testid="stSidebarNav"] a {
+  color: var(--text-secondary) !important;
+  border-radius: 6px !important;
+  margin: 2px 0 !important;
+}
+[data-testid="stSidebarNav"] a:hover {
+  background: rgba(201,168,76,0.1) !important;
+  color: var(--accent-gold) !important;
+}
+
+/* ── NAVBAR ──────────────────────────────────────────────── */
+.lex-navbar {
+  background: var(--bg-secondary);
+  border-bottom: 1px solid var(--border-gold);
+  padding: 0 2rem;
+  height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0;
+}
+.lex-logo { display: flex; align-items: center; gap: 12px; }
+.lex-logo-icon {
+  width: 36px; height: 36px;
+  background: var(--gold-gradient);
+  border-radius: 8px;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 18px; color: #000; font-weight: 900;
+}
+.lex-logo-text { font-size: 20px; font-weight: 700; color: var(--text-primary); letter-spacing: -0.02em; }
+.lex-logo-text span { color: var(--accent-gold); }
+.lex-nav-status { font-size: 12px; color: var(--text-muted); }
+.lex-nav-badge {
+  background: rgba(5,122,85,0.2); color: #6ee7b7;
+  font-size: 10px; font-weight: 700; padding: 3px 8px;
+  border-radius: 100px; text-transform: uppercase; letter-spacing: 1px;
+}
+
+/* ── HERO ────────────────────────────────────────────────── */
+.lex-hero {
+  background: var(--bg-secondary);
+  border-bottom: 1px solid var(--border);
+  padding: 2.5rem 2rem 2rem;
+  position: relative; overflow: hidden;
+}
+.lex-hero::after {
+  content: '⚖';
+  position: absolute; right: 2rem; top: 50%;
+  transform: translateY(-50%);
+  font-size: 7rem; opacity: 0.04; pointer-events: none;
+}
+.lex-page-title {
+  font-size: 2.2rem; font-weight: 700;
+  color: var(--text-primary); letter-spacing: -0.03em; line-height: 1.1;
+}
+.lex-page-title .gold { color: var(--accent-gold); }
+.lex-page-subtitle { font-size: 0.9rem; color: var(--text-secondary); margin-top: 0.5rem; }
+
+/* ── CARDS ───────────────────────────────────────────────── */
+.lex-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  overflow: hidden;
+  transition: all 0.2s ease;
+  box-shadow: var(--card-shadow);
+}
+.lex-card:hover { border-color: var(--border-gold); transform: translateY(-2px); }
+.lex-card-header {
+  padding: 1.1rem 1.5rem;
+  border-bottom: 1px solid var(--border);
+  display: flex; align-items: center; gap: 10px;
+}
+.lex-card-title {
+  font-size: 12px; font-weight: 600;
+  color: var(--text-primary);
+  text-transform: uppercase; letter-spacing: 0.08em;
+}
+.lex-card-body { padding: 1.5rem; }
+
+/* ── KPI CARDS ───────────────────────────────────────────── */
+.lex-kpi {
+  background: var(--bg-card); border: 1px solid var(--border);
+  border-radius: 12px; padding: 1.4rem;
+  position: relative; overflow: hidden;
+}
+.lex-kpi::before {
+  content: '';
+  position: absolute; top: 0; left: 0; right: 0;
+  height: 2px; background: var(--gold-gradient);
+}
+.lex-kpi-val {
+  font-size: 2rem; font-weight: 800;
+  color: var(--text-primary); letter-spacing: -0.04em; line-height: 1;
+}
+.lex-kpi-label {
+  font-size: 11px; color: var(--text-muted);
+  margin-top: 0.4rem; text-transform: uppercase; letter-spacing: 0.08em;
+}
+.lex-kpi-delta { font-size: 12px; margin-top: 0.3rem; }
+.delta-up { color: #6ee7b7; }
+.delta-down { color: #fca5a5; }
+
+/* ── VERDICT GAUGE ───────────────────────────────────────── */
+.verdict-gauge-wrap {
+  display: flex; flex-direction: column; align-items: center;
+  padding: 2rem; background: var(--bg-surface);
+  border-radius: 12px; border: 1px solid var(--border);
+}
+.verdict-probability {
+  font-size: 4.5rem; font-weight: 900;
+  letter-spacing: -0.05em; line-height: 1;
+}
+.verdict-label {
+  font-size: 0.9rem; font-weight: 600;
+  text-transform: uppercase; letter-spacing: 0.1em; margin-top: 0.5rem;
+}
+.verdict-conviction { color: #e02424; }
+.verdict-acquittal { color: #057a55; }
+
+/* ── ARGUMENT PANEL ──────────────────────────────────────── */
+.arg-panel {
+  border-radius: 10px; padding: 1.4rem;
+  margin-bottom: 1rem;
+}
+.arg-prosecution {
+  background: rgba(224,36,36,0.06);
+  border-left: 3px solid var(--accent-red);
+}
+.arg-defense {
+  background: rgba(5,122,85,0.06);
+  border-left: 3px solid var(--accent-green);
+}
+.arg-title {
+  font-size: 11px; font-weight: 700;
+  text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 0.65rem;
+}
+.arg-prosecution .arg-title { color: var(--accent-red); }
+.arg-defense .arg-title { color: var(--accent-green); }
+.arg-text { font-size: 13px; color: var(--text-secondary); line-height: 1.7; }
+
+/* ── LEGAL CITATION ──────────────────────────────────────── */
+.legal-cite {
+  background: rgba(201,168,76,0.07);
+  border: 1px solid rgba(201,168,76,0.2);
+  border-radius: 8px; padding: 10px 14px;
+  margin: 6px 0; display: flex; align-items: flex-start; gap: 10px;
+}
+.cite-icon { color: var(--accent-gold); font-size: 14px; margin-top: 2px; flex-shrink: 0; }
+.cite-case { font-size: 13px; font-weight: 600; color: var(--accent-gold); }
+.cite-principle { font-size: 11px; color: var(--text-secondary); margin-top: 3px; line-height: 1.5; }
+
+/* ── EVIDENCE CARD ───────────────────────────────────────── */
+.evidence-card {
+  background: var(--bg-surface); border: 1px solid var(--border);
+  border-radius: 10px; padding: 1rem 1.2rem;
+  margin-bottom: 8px; display: flex;
+  align-items: flex-start; gap: 12px;
+  transition: border-color 0.15s;
+}
+.evidence-card:hover { border-color: var(--border-gold); }
+.evidence-type-badge {
+  font-size: 10px; font-weight: 700;
+  padding: 3px 8px; border-radius: 100px;
+  text-transform: uppercase; letter-spacing: 0.08em; white-space: nowrap;
+}
+.badge-doc  { background: rgba(26,86,219,0.15); color: #93c5fd; }
+.badge-image{ background: rgba(201,168,76,0.15); color: var(--accent-gold); }
+.badge-audio{ background: rgba(6,148,162,0.15);  color: #67e8f9; }
+.evidence-strength { font-size: 11px; font-weight: 600; padding: 2px 8px; border-radius: 100px; }
+.strength-high  { background: rgba(5,122,85,0.2);   color: #6ee7b7; }
+.strength-med   { background: rgba(245,158,11,0.2); color: #fcd34d; }
+.strength-low   { background: rgba(224,36,36,0.2);  color: #fca5a5; }
+
+/* ── TIMELINE ────────────────────────────────────────────── */
+.timeline-item {
+  display: flex; gap: 16px; padding: 0 0 1.5rem;
+  position: relative;
+}
+.timeline-item::before {
+  content: '';
+  position: absolute; left: 15px; top: 28px; bottom: 0;
+  width: 1px; background: var(--border-gold);
+}
+.timeline-item:last-child::before { display: none; }
+.timeline-dot {
+  width: 30px; height: 30px; border-radius: 50%;
+  background: var(--bg-surface); border: 2px solid var(--accent-gold);
+  flex-shrink: 0; display: flex; align-items: center; justify-content: center;
+  font-size: 12px; color: var(--accent-gold); z-index: 1;
+}
+.timeline-date {
+  font-size: 11px; color: var(--accent-gold);
+  font-weight: 600; margin-bottom: 3px;
+  text-transform: uppercase; letter-spacing: 0.06em;
+}
+.timeline-event { font-size: 13px; color: var(--text-primary); font-weight: 500; }
+.timeline-desc  { font-size: 12px; color: var(--text-secondary); margin-top: 3px; line-height: 1.5; }
+
+/* ── BUTTONS ─────────────────────────────────────────────── */
+.stButton > button {
+  background: var(--gold-gradient) !important;
+  color: #000 !important; border: none !important;
+  border-radius: 6px !important; font-weight: 700 !important;
+  font-size: 13px !important; padding: 0.65rem 1.5rem !important;
+  letter-spacing: 0.02em !important; transition: opacity 0.15s !important;
+}
+.stButton > button:hover { opacity: 0.9 !important; }
+
+/* ── INPUT FIELDS ────────────────────────────────────────── */
+[data-testid="stTextInput"] input,
+[data-testid="stTextArea"] textarea,
+[data-testid="stSelectbox"] div {
+  background: var(--bg-surface) !important;
+  color: var(--text-primary) !important;
+  border: 1px solid var(--border-gold) !important;
+  border-radius: 6px !important;
+}
+
+/* ── METRICS ─────────────────────────────────────────────── */
+[data-testid="stMetric"] {
+  background: var(--bg-card) !important;
+  border: 1px solid var(--border) !important;
+  border-radius: 12px !important;
+  padding: 1rem !important;
+}
+[data-testid="stMetricValue"] { color: var(--text-primary) !important; font-weight: 800 !important; }
+[data-testid="stMetricLabel"] { color: var(--text-muted) !important; }
+
+/* ── TABS ────────────────────────────────────────────────── */
+[data-testid="stTabs"] [data-testid="stTab"] {
+  color: var(--text-secondary) !important;
+}
+[data-testid="stTabs"] [data-testid="stTab"][aria-selected="true"] {
+  color: var(--accent-gold) !important;
+  border-bottom-color: var(--accent-gold) !important;
+}
+
+/* ── EXPANDER ────────────────────────────────────────────── */
+[data-testid="stExpander"] {
+  background: var(--bg-card) !important;
+  border: 1px solid var(--border) !important;
+  border-radius: 8px !important;
+}
+[data-testid="stExpander"] summary {
+  color: var(--text-primary) !important;
+}
+
+/* ── FILE UPLOADER ───────────────────────────────────────── */
+[data-testid="stFileUploader"] {
+  background: var(--bg-surface) !important;
+  border: 2px dashed var(--border-gold) !important;
+  border-radius: 10px !important;
+}
+
+/* ── DATAFRAME ───────────────────────────────────────────── */
+[data-testid="stDataFrame"] { border-radius: 8px !important; overflow: hidden !important; }
+
+/* ── DIVIDERS ────────────────────────────────────────────── */
+hr { border-color: var(--border) !important; }
+
+/* ── SCROLLBAR ───────────────────────────────────────────── */
+::-webkit-scrollbar { width: 4px; height: 4px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: rgba(201,168,76,0.3); border-radius: 2px; }
+
+/* ── PLOTLY CHARTS ───────────────────────────────────────── */
+.js-plotly-plot .plotly .modebar { background: transparent !important; }
+
+/* ── SECTION DIVIDERS ────────────────────────────────────── */
+.section-divider {
+  height: 1px;
+  background: var(--border-gold);
+  margin: 1.5rem 0;
+  opacity: 0.3;
+}
+
+/* ── STATUS BADGES ───────────────────────────────────────── */
+.status-badge {
+  display: inline-flex; align-items: center; gap: 6px;
+  font-size: 11px; font-weight: 700; padding: 4px 12px;
+  border-radius: 100px; text-transform: uppercase; letter-spacing: 0.08em;
+}
+.status-active { background: rgba(5,122,85,0.2); color: #6ee7b7; }
+.status-pending { background: rgba(245,158,11,0.2); color: #fcd34d; }
+.status-closed { background: rgba(107,114,128,0.2); color: #9ca3af; }
+
+/* ── LOADING SPINNER ─────────────────────────────────────── */
+.stSpinner > div { border-color: var(--accent-gold) transparent transparent transparent !important; }

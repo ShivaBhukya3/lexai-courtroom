@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LexAI — Courtroom Intelligence Platform</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Inter:wght@300;400;500;600&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<!-- ═══════════════════ SIDEBAR ═══════════════════ -->
+<aside class="sidebar" id="sidebar">
+  <div class="sidebar-logo">
+    <div class="logo-icon"><i class="fas fa-balance-scale"></i></div>
+    <div class="logo-text">
+      <span class="logo-main">LexAI</span>
+      <span class="logo-sub">Courtroom Intelligence</span>
+    </div>
+  </div>
+
+  <div class="sidebar-section-label">NAVIGATION</div>
+  <nav class="sidebar-nav">
+    <a class="nav-item active" data-page="overview" href="#">
+      <i class="fas fa-tachometer-alt"></i><span>Overview</span>
+    </a>
+    <a class="nav-item" data-page="cases" href="#">
+      <i class="fas fa-folder-open"></i><span>Case Manager</span>
+    </a>
+    <a class="nav-item" data-page="evidence" href="#">
+      <i class="fas fa-microscope"></i><span>Evidence Room</span>
+    </a>
+    <a class="nav-item" data-page="arguments" href="#">
+      <i class="fas fa-gavel"></i><span>Argument Studio</span>
+    </a>
+    <a class="nav-item" data-page="verdict" href="#">
+      <i class="fas fa-chart-pie"></i><span>Verdict Predictor</span>
+    </a>
+    <a class="nav-item" data-page="research" href="#">
+      <i class="fas fa-search"></i><span>Legal Research</span>
+    </a>
+  </nav>
+
+  <div class="sidebar-section-label">ACTIVE CASE</div>
+  <div class="case-selector" id="caseSelector">
+    <div class="case-selector-label" id="caseSelectorLabel">Select a case</div>
+    <div class="case-list" id="caseList"></div>
+    <button class="btn-new-case" id="btnNewCase"><i class="fas fa-plus"></i> New Case</button>
+  </div>
+
+  <div class="sidebar-footer">
+    <div class="api-status" id="apiStatus">
+      <span class="status-dot"></span>
+      <span class="status-text">Connecting…</span>
+    </div>
+    <div class="sidebar-version">v1.0.0 &nbsp;·&nbsp; MIT</div>
+  </div>
+</aside>
+
+<!-- ═══════════════════ TOPBAR ═══════════════════ -->
+<div class="topbar">
+  <button class="topbar-toggle" id="sidebarToggle"><i class="fas fa-bars"></i></button>
+  <div class="topbar-breadcrumb" id="topbarBreadcrumb">Overview</div>
+  <div class="topbar-actions">
+    <button class="topbar-btn" title="API Docs" onclick="window.open(API + '/docs','_blank')">
+      <i class="fas fa-code"></i>
+    </button>
+    <button class="topbar-btn" title="Refresh" id="btnRefresh"><i class="fas fa-sync-alt"></i></button>
+  </div>
+</div>
+
+<!-- ═══════════════════ MAIN CONTENT ═══════════════════ -->
+<main class="main-content" id="mainContent">
+
+  <!-- ── OVERVIEW PAGE ── -->
+  <section class="page active" id="page-overview">
+    <div class="page-hero">
+      <h1 class="hero-title">Multimodal Courtroom<br/><span class="gold">Intelligence Platform</span></h1>
+      <p class="hero-sub">Powered by Groq Llama3-70B · GPT-4V · Whisper · FAISS · RAG</p>
+    </div>
+
+    <div class="kpi-grid" id="kpiGrid">
+      <div class="kpi-card" data-val="50" data-suffix="M+">
+        <div class="kpi-icon"><i class="fas fa-folder"></i></div>
+        <div class="kpi-val" id="kpi0">0</div>
+        <div class="kpi-label">Pending Indian Cases</div>
+      </div>
+      <div class="kpi-card" data-val="31" data-suffix="">
+        <div class="kpi-icon"><i class="fas fa-book"></i></div>
+        <div class="kpi-val" id="kpi1">0</div>
+        <div class="kpi-label">IPC Sections Indexed</div>
+      </div>
+      <div class="kpi-card" data-val="25" data-suffix="">
+        <div class="kpi-icon"><i class="fas fa-landmark"></i></div>
+        <div class="kpi-val" id="kpi2">0</div>
+        <div class="kpi-label">Landmark Precedents</div>
+      </div>
+      <div class="kpi-card" data-val="65" data-suffix="%">
+        <div class="kpi-icon"><i class="fas fa-chart-bar"></i></div>
+        <div class="kpi-val" id="kpi3">0</div>
+        <div class="kpi-label">ML Model Accuracy</div>
+      </div>
+    </div>
+
+    <div class="features-grid">
+      <div class="feature-card">
+        <div class="feature-icon gold"><i class="fas fa-file-pdf"></i></div>
+        <h3>Document Intelligence</h3>
+        <p>PDF · DOCX · TXT extraction with spaCy NER — persons, dates, IPC sections, monetary amounts.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon blue"><i class="fas fa-camera"></i></div>
+        <h3>Vision Evidence (GPT-4V)</h3>
+        <p>Forensic image analysis, EXIF tampering detection, evidence strength scoring 1–10.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon green"><i class="fas fa-microphone"></i></div>
+        <h3>Testimony Audio (Whisper)</h3>
+        <p>Transcription with timestamps, credibility scoring, cross-witness inconsistency detection.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon red"><i class="fas fa-gavel"></i></div>
+        <h3>AI Argument Generation</h3>
+        <p>Full prosecution + defense case structures with 15+ cross-examination questions per witness.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon purple"><i class="fas fa-brain"></i></div>
+        <h3>Verdict Prediction (ML)</h3>
+        <p>Random Forest + LR + XGBoost ensemble with SHAP explainability and what-if scenarios.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon gold"><i class="fas fa-search"></i></div>
+        <h3>Legal RAG (Indian Law)</h3>
+        <p>FAISS semantic search over 50+ IPC sections and 25+ Supreme Court precedents.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── CASE MANAGER PAGE ── -->
+  <section class="page" id="page-cases">
+    <div class="page-header">
+      <h2 class="page-title"><i class="fas fa-folder-open gold"></i> Case Manager</h2>
+      <button class="btn-primary" id="btnCreateCase"><i class="fas fa-plus"></i> Create Case</button>
+    </div>
+
+    <div class="cases-table-wrap">
+      <table class="lex-table" id="casesTable">
+        <thead>
+          <tr>
+            <th>Case ID</th><th>Name</th><th>Type</th><th>Court</th><th>Status</th><th>Created</th><th>Actions</th>
+          </tr>
+        </thead>
+        <tbody id="casesTableBody"><tr><td colspan="7" class="empty-row">Loading cases…</td></tr></tbody>
+      </table>
+    </div>
+
+  </section>
+
+  <!-- ── EVIDENCE ROOM PAGE ── -->
+  <section class="page" id="page-evidence">
+    <div class="page-header">
+      <h2 class="page-title"><i class="fas fa-microscope gold"></i> Evidence Room</h2>
+      <div class="active-case-badge" id="evidenceCaseBadge">No case selected</div>
+    </div>
+
+    <div class="upload-zone" id="uploadZone">
+      <div class="upload-zone-inner">
+        <i class="fas fa-cloud-upload-alt upload-icon"></i>
+        <p class="upload-title">Drop evidence files here</p>
+        <p class="upload-sub">PDF · DOCX · TXT · JPG · PNG · MP3 · WAV · MP4</p>
+        <button class="btn-primary" id="btnBrowseFiles">Browse Files</button>
+        <input type="file" id="fileInput" multiple accept=".pdf,.docx,.txt,.jpg,.jpeg,.png,.mp3,.wav,.mp4" hidden />
+      </div>
+    </div>
+
+    <div class="evidence-list" id="evidenceList"></div>
+  </section>
+
+  <!-- ── ARGUMENT STUDIO PAGE ── -->
+  <section class="page" id="page-arguments">
+    <div class="page-header">
+      <h2 class="page-title"><i class="fas fa-gavel gold"></i> Argument Studio</h2>
+      <div class="arg-controls">
+        <select id="argStyle" class="select-sm">
+          <option value="balanced">Balanced</option>
+          <option value="aggressive">Aggressive</option>
+          <option value="conservative">Conservative</option>
+        </select>
+        <button class="btn-prosecution" id="btnGenProsecution"><i class="fas fa-sword"></i> Generate Prosecution</button>
+        <button class="btn-defense" id="btnGenDefense"><i class="fas fa-shield-alt"></i> Generate Defense</button>
+      </div>
+    </div>
+
+    <div class="args-split">
+      <div class="arg-panel prosecution-panel">
+        <div class="arg-panel-header">
+          <i class="fas fa-user-tie"></i> PROSECUTION
+          <span class="arg-score" id="prosecutionScore">—</span>
+        </div>
+        <div class="arg-content" id="prosecutionContent">
+          <div class="arg-placeholder"><i class="fas fa-balance-scale"></i><br/>Click "Generate Prosecution" to build the case</div>
+        </div>
+      </div>
+      <div class="arg-divider"></div>
+      <div class="arg-panel defense-panel">
+        <div class="arg-panel-header">
+          <i class="fas fa-user-shield"></i> DEFENSE
+          <span class="arg-score" id="defenseScore">—</span>
+        </div>
+        <div class="arg-content" id="defenseContent">
+          <div class="arg-placeholder"><i class="fas fa-shield-alt"></i><br/>Click "Generate Defense" to build the strategy</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Radar chart -->
+    <div class="radar-section hidden" id="radarSection">
+      <h3 class="section-title">Strength Comparison</h3>
+      <canvas id="radarChart" width="500" height="400"></canvas>
+    </div>
+
+    <!-- Cross-examination -->
+    <div class="crossex-section">
+      <h3 class="section-title"><i class="fas fa-comments gold"></i> Cross-Examination Generator</h3>
+      <div class="crossex-controls">
+        <input type="text" id="witnessName" placeholder="Witness name (optional)" class="input-sm" style="flex:1;min-width:160px" />
+        <select id="crossexSide" class="select-sm"><option value="defense">Defense</option><option value="prosecution">Prosecution</option></select>
+        <button class="btn-primary" id="btnCrossEx"><i class="fas fa-question-circle"></i> Generate Questions</button>
+      </div>
+      <textarea id="witnessStatement" rows="3" placeholder="Paste the witness statement or testimony here…"></textarea>
+      <div class="crossex-results" id="crossexResults"></div>
+    </div>
+  </section>
+
+  <!-- ── VERDICT PREDICTOR PAGE ── -->
+  <section class="page" id="page-verdict">
+    <div class="page-header">
+      <h2 class="page-title"><i class="fas fa-chart-pie gold"></i> Verdict Predictor</h2>
+    </div>
+
+    <div class="verdict-layout">
+      <div class="verdict-controls">
+        <h3 class="section-title">Case Features</h3>
+        <div class="feature-sliders" id="featureSliders"></div>
+        <div class="feature-checkboxes" id="featureCheckboxes"></div>
+        <button class="btn-primary btn-full" id="btnPredict"><i class="fas fa-brain"></i> Predict Verdict</button>
+      </div>
+
+      <div class="verdict-result">
+        <div class="gauge-container">
+          <canvas id="gaugeCanvas" width="320" height="200"></canvas>
+          <div class="gauge-label" id="gaugeLabel">—</div>
+          <div class="gauge-verdict" id="gaugeVerdict">Awaiting prediction</div>
+        </div>
+
+        <div class="model-votes hidden" id="modelVotes">
+          <h3 class="section-title">Ensemble Votes</h3>
+          <div class="vote-list" id="voteList"></div>
+        </div>
+
+        <div class="shap-section hidden" id="shapSection">
+          <h3 class="section-title">SHAP Feature Importance</h3>
+          <canvas id="shapChart" width="400" height="280"></canvas>
+        </div>
+
+        <div class="scenarios-section hidden" id="scenariosSection">
+          <h3 class="section-title">What-If Scenarios</h3>
+          <div class="scenario-grid" id="scenarioGrid"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── LEGAL RESEARCH PAGE ── -->
+  <section class="page" id="page-research">
+    <div class="page-header">
+      <h2 class="page-title"><i class="fas fa-search gold"></i> Legal Research</h2>
+    </div>
+
+    <div class="research-search">
+      <div class="search-bar">
+        <i class="fas fa-search search-icon-inner"></i>
+        <input type="text" id="researchQuery" placeholder="Search IPC sections, precedents, or ask a legal question…" />
+        <button class="btn-primary" id="btnSearch"><i class="fas fa-arrow-right"></i></button>
+      </div>
+      <div class="example-queries">
+        <span class="eq-label">Try:</span>
+        <button class="eq-btn" data-q="cheating fraud Section 420">cheating fraud §420</button>
+        <button class="eq-btn" data-q="rarest of rare death penalty">rarest of rare</button>
+        <button class="eq-btn" data-q="domestic violence cruelty 498A">domestic violence §498A</button>
+        <button class="eq-btn" data-q="bail conditions non-bailable">bail non-bailable</button>
+        <button class="eq-btn" data-q="rape consent Section 376">rape §376</button>
+      </div>
+    </div>
+
+    <div class="research-tabs">
+      <button class="res-tab active" data-tab="sections">IPC / CrPC Sections</button>
+      <button class="res-tab" data-tab="precedents">Precedents</button>
+      <button class="res-tab" data-tab="ask">Ask AI</button>
+    </div>
+
+    <div class="research-results" id="researchResults">
+      <div class="research-placeholder"><i class="fas fa-balance-scale"></i><p>Enter a query to search the Indian legal database</p></div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ═══════════════════ CREATE CASE MODAL ═══════════════════ -->
+<div class="modal-overlay hidden" id="modalCreateCase">
+  <div class="modal">
+    <div class="modal-header">
+      <h3><i class="fas fa-plus-circle gold"></i> New Case</h3>
+      <button class="modal-close" id="modalClose"><i class="fas fa-times"></i></button>
+    </div>
+    <div class="modal-body">
+      <div class="form-row">
+        <div class="form-group">
+          <label>Case Name *</label>
+          <input type="text" id="inCaseName" placeholder="e.g. State of Maharashtra v. Rahul Mehta" />
+        </div>
+        <div class="form-group">
+          <label>Case Type *</label>
+          <select id="inCaseType">
+            <option>Criminal</option><option>Civil</option><option>Family</option><option>Corporate</option>
+          </select>
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group">
+          <label>Court</label>
+          <input type="text" id="inCourt" placeholder="e.g. Sessions Court, Mumbai" />
+        </div>
+        <div class="form-group">
+          <label>IPC Charges (comma-separated)</label>
+          <input type="text" id="inCharges" placeholder="IPC 420, IPC 468" />
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group">
+          <label>Plaintiff / Complainant</label>
+          <input type="text" id="inPlaintiff" placeholder="Name" />
+        </div>
+        <div class="form-group">
+          <label>Defendant / Accused</label>
+          <input type="text" id="inDefendant" placeholder="Name" />
+        </div>
+      </div>
+    </div>
+    <div class="modal-footer">
+      <button class="btn-ghost" id="btnCancelCase">Cancel</button>
+      <button class="btn-primary" id="btnSubmitCase"><i class="fas fa-check"></i> Create</button>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════════ TOAST ═══════════════════ -->
+<div class="toast-container" id="toastContainer"></div>
+
+<!-- ═══════════════════ SCRIPTS ═══════════════════ -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/TextPlugin.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
